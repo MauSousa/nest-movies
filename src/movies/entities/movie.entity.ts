@@ -5,7 +5,7 @@ import {
   PrimaryGeneratedColumn,
 } from 'typeorm';
 
-@Entity()
+@Entity('movies')
 export class Movie {
   @PrimaryGeneratedColumn()
   id: number;
@@ -13,7 +13,7 @@ export class Movie {
   @Column('varchar', {
     unique: true,
   })
-  movie_name: string;
+  title: string;
 
   @Column('text')
   review: string;
@@ -23,4 +23,7 @@ export class Movie {
 
   @CreateDateColumn()
   created_at: Date;
+
+  @CreateDateColumn()
+  updated_at: Date;
 }
