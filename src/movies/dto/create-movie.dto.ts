@@ -1,5 +1,5 @@
 import {
-  IsDate,
+  // IsDate,
   IsPositive,
   IsString,
   Max,
@@ -21,6 +21,6 @@ export class CreateMovieDto {
   @Max(5)
   score: number;
 
-  @IsDate()
-  updated_at?: Date;
+  // @IsDate()
+  // updated_at?: Date;
 }
