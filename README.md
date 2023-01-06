@@ -18,17 +18,6 @@ $ yarn install
 4. Start the server in dev mode `yarn run start:dev`
 5. Run the seed file `yarn run seed`
 
-```bash
-# development
-$ yarn run start
-
-# watch mode
-$
-
-# production mode
-$ yarn run start:prod
-```
-
 ## Test
 
 ```bash
